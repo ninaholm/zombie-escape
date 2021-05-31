@@ -1,8 +1,32 @@
 {% from "_formhelpers.html" import render_field %}
+
+<h2>Ansatte</h2>
+<p>Andreas Kreutzen</p>
+<p>Jesper Holm</p>
+<p>Ina Hammer</p>
+<p>H. Smith</p>
+<p>Casper Fabricius</p>
+<p>Jonathan Munch</p>
+<p>Ann M. Jacobsen</p>
+<p>Valdemar R. Lund</p>
+<p>Marie Kristoffersen</p>
+<p>G. Clausen</p>
+<p>Nicolai Torp</p>
+
+</br>
+<p>Indtast fulde navn for at printe nyt ID-kort:</p>
+
+<div style="background-color:aliceblue;">
 <form method=post>
   <dl>
     {{ render_field(form.username) }}
-    {{ render_field(form.title) }}
   </dl>
-  <p><input type=submit value=Register>
+  <p><input type=submit value=Print>
+</form>
+</div>
+
+<hr>
+
+<form action="/forside">
+  <input type="submit" value="Tilbage til forsiden" />
 </form>
